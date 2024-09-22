@@ -1,18 +1,216 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+@import url('./reset.css');
+.container{
+  padding: 36px 156px;
+}
+h1 {
+margin-bottom: 36px;
+}
+
+.flatpickr-input {
+max-width: 278px;
+height: 40px;
+margin: 0 8px 32px 156px;
+padding: 8px 16px;
+width: 272px;
+height: 40px;
+border-radius: 4px;
+border-color: #808080;
+background: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+
+.flatpickr-input:hover {
+border-color: #000000;
+}
+
+.flatpickr-input.active { 
+border-color: #4e75ff;
+}
+
+.flatpickr-input.disable {
+  background: #fafafa;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #808080;
+}
+
+
+.btn-input {
+padding: 8px 16px;
+width: 75px;
+height: 40px;
+background: #CFCFCF;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #989898;
+}
+
+.btn-input:hover{
+background: #6c8cff;
+color: #fff;
+}
+
+.btn-input.active {
+  background: #4e75ff;
+  color: #fff;
+}
+
+.btn-input:disabled {
+  background: #CFCFCF;
+  color: #989898;
+}
+
+span.flatpickr-day.selected {
+background-color: #4e75ff;
+border-color: #4e75ff;
+} 
+span.flatpickr-day.selected:hover {
+  background-color: #6c8cff;
+  border-color: #6c8cff;
+}
+
+
+.timer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 24px;
+  max-width: 346px;
+  margin: 32px 156px;
+
+}
+.field {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.value {
+font-weight: 400;
+font-size: 40px;
+line-height: 1.2;
+color: #2e2f42;
+}
+
+
+
+.label {
+/* line-height: 1.5; */
+color: #2e2f42;
+text-transform: uppercase;
+}
+
+.iziToast-wrapper-bottomRight, .iziToast-wrapper-bottomCenter,
+.iziToast-wrapper-center {
+top: 0;
+left: 0;
+text-align: end;
+}
+
+
+
+
+
+/* -------------------- №2 ------------------------- */
+.container {
+  padding: 36px;
+}
+
+.form {
+display: flex;
+flex-direction: column;
+gap: 16px;
+margin-left: 156px;
+max-width: 360px;
+}
+
+.label-delay {
+display: flex;
+flex-direction: column;
+gap: 8px;
+
+}
+
+.fieldset-label {
+display: flex;
+justify-content: space-around;
+margin-bottom: 24px;
+padding: 24px 48px 8px;
+border-radius: 4px;
+border: 1px solid #808080;
+}
+.fieldset-label:hover {
+  border-color: #000000;
+}
+
+.input-delay {
+border: 1px solid #808080;
+border-radius: 4px;
+max-width: 360px;
+height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.input-delay:hover {
+  border-color: #000000;
+}
+
+.input-delay.active {
+  border-color: #4E75FF;
+}
+
+.btn-form {
+border-radius: 8px;
+padding: 8px 16px;
+width: 360px;
+height: 40px;
+background: #4e75ff;
+border: none;
+cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.btn-form:hover {
+background: #6c8cff;
+}
+
+
+.my-custom-icon {
+  background-image: url('../img/circle.svg');
+  background-size: cover;
+}
+
+.my-error-icon {
+  background-image: url('../img/octagon.svg');
+  background-size: cover;
+}
+
+
+/* .custom-close-button {
+
+color: rgba(255, 255, 255, 1);
+} */
