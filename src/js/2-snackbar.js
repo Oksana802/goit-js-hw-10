@@ -11,16 +11,13 @@ const btnForm = document.querySelector('button');
 const classBtnForm = btnForm.classList.add('btn-form');
 const form = document.querySelector('form');
 
-// inputDelay.addEventListener('input', () => {
-//   inputDelay.classList.add('active'); 
-// });
+
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const delay = parseInt(form.delay.value); 
   const state = form.state.value; 
   
-
   const createPromise = (delay) => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -32,6 +29,7 @@ form.addEventListener('submit', (event) => {
       }, delay);
     });
   };
+
 
 
   createPromise(delay)
@@ -47,9 +45,6 @@ form.addEventListener('submit', (event) => {
           messageColor: 'rgba(255, 255, 255, 1)',
           messageSize: '16px',
           position: "topRight",
-          //       close: true,
-  // closeButton: true,
-  //       closeButtonClass: 'custom-close-button',
           timeout: 5000
         
         });
@@ -61,7 +56,7 @@ form.addEventListener('submit', (event) => {
         icon: 'my-error-icon',
         titleColor: 'rgba(255, 255, 255, 1)',
         titleSize: '16px',
-        message: `Illegal operation`,
+        message: `Rejected promise in ${delay}ms`,
         messageColor: 'rgba(255, 255, 255, 1)',
         messageSize: '16px',
         position: "topRight",
